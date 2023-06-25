@@ -5,7 +5,7 @@ const Main = () => {
   return (
     <main className="w-full">
       {datas.map((d) => (
-        <div>
+        <div key={d.id}>
           <div className="flex md:flex-row flex-col-reverse px-4 justify-center items-center md:items-end flex-wrap-reverse w-full">
             <section className="md:w-2/4 w-full md:min-w-[450px] pt-4 flex justify-center flex-col">
               <div className="flex flex-col items-center pt-4 w-full">
