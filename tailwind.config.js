@@ -25,6 +25,7 @@ module.exports = {
       green: "#5bba33",
       bisque: "#f2aa7c",
       gray: "#171717",
+      transparent: "transparent"
     },
     fontFamily: {
       inter: ['var(--font-inter)', 'sans-serif'],
@@ -34,7 +35,7 @@ module.exports = {
     fontSize: {
       sm: ['0.8rem'],
       base: ['1rem'],
-      md: ['1.6rem'],
+      md: ['1.4rem'],
       '2xl': ['2rem'],
       '3xl': ['3rem'],
       '4xl': ['4rem'],

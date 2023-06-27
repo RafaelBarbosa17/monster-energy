@@ -1,4 +1,5 @@
 import './globals.css'
+import '../styles/navbuttons.css'
 import { Inter, Teko, Schoolbell } from 'next/font/google'
 
 const inter = Inter({

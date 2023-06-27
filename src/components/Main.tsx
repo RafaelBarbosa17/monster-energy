@@ -1,5 +1,6 @@
 import Image from "next/image";
 import datas from "../datas.json";
+import Infos from "./Infos";
 
 const Main = () => {
   return (
@@ -12,7 +13,7 @@ const Main = () => {
                 <h1 className="font-teko uppercase text-4xl font-bold leading-none w-full">
                   {d.title}
                 </h1>
-                <div className="flex flex-col justify-center items-center p-8 border border-icewhite">
+                <div className="flex flex-col justify-center items-center md:p-8 p-2 border border-icewhite">
                   <div className="max-w-[200px] w-3/5 h-min">
                     <Image
                       src={"/logos/logo-original.png"}
@@ -22,9 +23,11 @@ const Main = () => {
                       className="w-full h-full"
                     />
                   </div>
-                  <p className="text-base font-inter mt-4">{d.flavor}</p>
+                  <p className="text-base text-center font-inter mt-4">
+                    {d.flavor}
+                  </p>
                 </div>
-                <p className="text-base font-inter mt-4 px-8">
+                <p className="text-base font-inter mt-4 md:px-8">
                   {d.flavor_mensage}
                 </p>
               </div>
@@ -42,14 +45,17 @@ const Main = () => {
             </section>
           </div>
           <div>
-            <section>
-              <h2 className="my-4 text-3xl uppercase text-center font-bold font-teko">
-                {d.catchphrase}
-              </h2>
-              <p className="text-md font-schoolbell px-4">
-                {d.can_detail}
-              </p>
+            <section className="w-full flex justify-center">
+              <div className="md:max-w-[50%]">
+                <h2 className="mt-8 text-3xl uppercase text-center font-bold font-teko leading-none">
+                  {d.catchphrase}
+                </h2>
+                <p className="text-md font-schoolbell px-2 md:px-4 text-center">
+                  {d.can_detail}
+                </p>
+              </div>
             </section>
+            <Infos data={d} />
           </div>
         </div>
       ))}
