@@ -6,19 +6,19 @@ const Table = (prop: {nutritional: NutritionalInfo}) => {
     const nutriInfo = prop.nutritional
 
     return (
-        <section id="nutritional" className="min-w-full snap-center flex justify-center">
+        <section id="nutritional" className="min-w-[90%] snap-center flex justify-center">
           <div>
             <h2 className="uppercase text-2xl font-bold">
               informações nutricionais
             </h2>
-            <table className="font-inter text-left">
-              <thead className="bg-gray text-left">
+            <table className="font-inter text-left align-top w-full">
+              <thead className="bg-gray text-left align-bottom">
                 <tr>
                   <th className="p-2" scope="col">Ingredientes</th>
                   <th className="p-2" scope="col">Quantidade por 200ml</th>
                 </tr>
               </thead>
-              <tbody className="bg-black h-72 overflow-y-scroll">
+              <tbody className="bg-black max-h-[200px] overflow-auto min-w-full">
                 <tr>
                   <th className="p-2" scope="row">Valor Energetico:</th>
                   <td className="text-center"> { nutriInfo.energetic_value } </td>

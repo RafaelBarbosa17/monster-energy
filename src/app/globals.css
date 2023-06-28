@@ -3,16 +3,16 @@
 @tailwind utilities;
 
 
-body::-webkit-scrollbar {
+*::-webkit-scrollbar {
     width: 0.6rem;
     background-color: transparent;
 }
 
-body::-webkit-scrollbar-track {
+*::-webkit-scrollbar-track {
     background-color: black;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
     background-image: linear-gradient(to top, #0f0, #0f0, #ff0);
     border-radius: 1rem;
     border: 2px solid black;

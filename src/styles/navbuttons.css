@@ -14,16 +14,6 @@ ingredients */
     transform: skew(-30deg);
 }
 
-.active::after {
-    content: '';
-    position: relative;
-    background-image: linear-gradient(to right, #a2ff00, #00ff08);
-    width: 80%;
-    height: 4px;
-    margin: 4px;
-    transform: skew(-30deg);
-}
-
-.active {
-    font-weight: bold;
+#tbody tr {
+    display: block;
 }

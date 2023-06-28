@@ -5,7 +5,7 @@ import { DetailsData } from "./Infos";
 
 const Details = (prop: {details: DetailsData}) => {
     return (
-        <section id="detail" className="w-full min-w-[350px] snap-center mx-[100%] relative">
+        <section id="details" className="w-full min-w-[350px] snap-center mx-[100%] relative">
             <div className="w-full flex flex-col items-center">
                 <h2 className="text-md font-inter font-bold text-center m-6">
                     O QUE TEM NA LATA

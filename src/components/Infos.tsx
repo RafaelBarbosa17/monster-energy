@@ -26,7 +26,8 @@ export interface NutritionalInfo {
 
 interface DataProps {
   details: DetailsData;
-  nutritional_info: NutritionalInfo
+  nutritional_info: NutritionalInfo;
+  ingredients: string
 }
 
 const Nav = (prop: { data: DataProps }) => {
@@ -74,7 +75,7 @@ const Nav = (prop: { data: DataProps }) => {
                 onClick={() => {
                   selectedLi("ingredients");
                   document.querySelector('#box')?.scroll({
-                    left: 2000
+                    left: 3000
                   })
                 }}
               >
@@ -84,13 +85,11 @@ const Nav = (prop: { data: DataProps }) => {
           </ul>
         </nav>
       </header>
-      <section
-        className="w-full flex flex-row justify-center mb-60"
-      >
+      <section className="w-full flex flex-row justify-center mb-6 pt-6">
         <div id="box" className="md:max-w-[50%] flex flex-row overflow-x-hidden snap-mandatory scroll-smooth snap-x">
           <Details details={prop.data.details} />
           <Table nutritional={prop.data.nutritional_info} />
-          <Ingredients />
+          <Ingredients ingredients={prop.data.ingredients}/>
         </div>
       </section>
     </section>
