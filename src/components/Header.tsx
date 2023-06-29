@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Header = () => {
     return (
-        <header className="">
+        <header className="w-full h-[10vh]">
             <div className="w-40 h-auto p-4">
                 <Image
                     src={'/logo-main.png'}

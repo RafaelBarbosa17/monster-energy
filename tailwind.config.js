@@ -6,10 +6,21 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    keyframes: {
+      comesLeft: {
+        '0%': { transform: 'translateX(100px)' },
+        '100%': { transform: 'translateX(-50px)' }
+      },
+      comesRight: {
+        '0%': { transform: 'translateX(-100px)' },
+        '100%': { transform: 'translateX(0px)' }
+      },
+    },
     screens: {
       sm: '480px',
       md: '768px',
       lg: '976px',
+      thousand: '1000px',
       xl: '1440px',
     },
     colors: {
