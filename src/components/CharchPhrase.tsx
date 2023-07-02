@@ -1,36 +1,29 @@
 "use client";
-import { useContext } from "react";
-import { ProductContext } from "@/context/ProductContext";
 import Image from "next/image";
+import useProduct from "@/context/useProduct";
 
 const CharchPhrase = () => {
-  const context = useContext(ProductContext);
-
-  if (!context) {
-    return null;
-  }
-
-  const { product } = context;
+  const product = useProduct()
 
   return (
-    <section id="charchphrase" className="h-screen">
+    <section id="charchphrase" className="h-screen snap-center">
       <div className="h-full snap-center">
-        <div className="h-full flex justify-center">
-          <div className="thousand:block hidden w-fit h-[90%]" >
+        <div className="h-full flex justify-center items-center">
+          <div className="md:block hidden w-[400px] h-auto max-h-[500px]" >
             <Image
-              src={'/cans/can-original.png'}
-              width={500}
-              height={300}
+              src={'/logo.png'}
+              width={1000}
+              height={1000}
               alt="Lata de monster original"
               className="w-full h-full"
             />
           </div>
           <div className="md:max-w-[40%]">
             <h2 className="mt-8 text-3xl uppercase text-center font-bold font-teko leading-none">
-              {product.catchphrase}
+              {product?.catchphrase}
             </h2>
             <p className="text-md font-schoolbell px-2 md:px-4 text-center">
-              {product.can_detail}
+              {product?.can_detail}
             </p>
           </div>
         </div>

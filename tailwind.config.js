@@ -7,9 +7,9 @@ module.exports = {
   ],
   theme: {
     keyframes: {
-      comesLeft: {
-        '0%': { transform: 'translateX(100px)' },
-        '100%': { transform: 'translateX(-50px)' }
+      comesBottom: {
+        '0%': { transform: 'translateY(100px)' },
+        '100%': { transform: 'translateY(0px)' }
       },
       comesRight: {
         '0%': { transform: 'translateX(-100px)' },
@@ -50,7 +50,8 @@ module.exports = {
       '2xl': ['2rem'],
       '3xl': ['3rem'],
       '4xl': ['4rem'],
-      '5xl': ['5rem']
+      '5xl': ['5rem'],
+      '6xl': ['6rem']
     }
   },
   plugins: [],

@@ -1,5 +1,10 @@
 
-const Ingredients = (prop: {ingredients: string}) => {
+import useProduct from "@/context/useProduct";
+
+const Ingredients = () => {
+
+    const product = useProduct()
+
     return (
         <section className="w-full min-w-[350px] snap-center mx-[100%] relative">
             <h3 className="text-3xl uppercase font-bold font-teko text-icewhite leading-none">
@@ -7,7 +12,7 @@ const Ingredients = (prop: {ingredients: string}) => {
             </h3>
             <div>
                 <p className="font-inter">
-                    {prop.ingredients}
+                    {product?.ingredients}
                 </p>
             </div>
         </section>

@@ -24,5 +24,31 @@
             "caffeine": "65",
             "sugars": "23"
         }
+    },
+    {
+        "title": "MONSTER ENERGY SEGUNDO",
+        "catchphrase": "Liberte a Besta!",
+        "flavor": "O sabor de Monster é ao mesmo tempo marcante e suave.",
+        "flavor_mensage": "Surpreenda-se com a lata do energético mais animal do planeta. Com duas vezes mais energia do que uma bebida energética regular. Monster possui uma presença marcante e um sabor único! Inconfundível.",
+        "can_detail": "Se liga no Monster Energy Original, a bebida energética mais irada do planeta! Um combo ideal de ingredientes na medida perfeita para fazer acontecer do jeito Monster. O sabor de Monster é ao mesmo tempo marcante e suave. Os atletas, a galera da facul, mochileiros, quem faz um som, geeks, hipsters e todas as tribos curtiram. Você vai curtir também!",
+        "nutritional_info": {
+            "energetic_value": "93kcal = 391kj",
+            "carbohydrates": "23G",
+            "sugars": "23G",
+            "sodium": "155mg",
+            "vitamin_B3": "16mg",
+            "vitamin_B6": "1,3mg",
+            "vitamin_B2": "1,3mg",
+            "vitamin_B12": "2,4Ug",
+            "taurine": "800mg",
+            "caffeine": "65mg",
+            "glucuronolactone": "4,2mg",
+            "inositol": "4,2mg"
+        },
+        "ingredients": "ÁGUA GASEIFICADA, AÇÚCAR, XAROPE DE GLICOSA, TAURINA (800MG/200ML), CAFEÍNA (65MG/200ML), VITAMINAS (B3, B6, B2, E B12), EXTRATO DE GUARANÁ (8,4MG/200ML), CLORETO DE SÓDIO, GLUCORONOLACTONA (4,2MG/200ML), INOSITOL (4,2MG/200ML), MALTODEXTRINA, ACIDULANTE (ÁCIDO CITRICO), AROMATIZANTES NATURAIS E ARTIFICIAL, REGULADOR DE ACIDEZ (CITRATO DE SÓDIO), CONSERVADORES (ÁCIO SÓRBICO E ÁCIDO BENZÓICO), CORANTES (ANTOCIANINAS).",
+        "details": {
+            "caffeine": "65",
+            "sugars": "23"
+        }
     }
 ]

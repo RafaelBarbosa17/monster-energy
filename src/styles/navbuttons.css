@@ -1,10 +1,5 @@
-/* details
-nutritionals
-ingredients */
 
-#details li:nth-child(1) button::after, 
-#nutritionals li:nth-child(2) button::after, 
-#ingredients li:nth-child(3) button::after {
+.active::after {
     content: '';
     position: relative;
     background-image: linear-gradient(to right, #a2ff00, #00ff08);
@@ -12,8 +7,18 @@ ingredients */
     height: 4px;
     margin: 4px;
     transform: skew(-30deg);
+    transition: all 500ms linear;
+}
+
+.active {
+    font-weight: bold;
 }
 
 #tbody tr {
     display: block;
+}
+
+.el {
+    color: #002fff;
+    background-color: #0b3216;
 }

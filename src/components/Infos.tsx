@@ -4,36 +4,10 @@ import Details from "./Details";
 import Table from "./Table";
 import Ingredients from "./Ingredients";
 
-export interface DetailsData {
-  caffeine: string;
-  sugars: string;
-}
+const Infos = () => {
+  const [select, setSelect] = useState(["active", "desactive", "desactive"]);
 
-export interface NutritionalInfo {
-  energetic_value: string ,
-  carbohydrates: string ,
-  sugars: string ,
-  sodium: string ,
-  vitamin_B3: string ,
-  vitamin_B6: string ,
-  vitamin_B2: string ,
-  vitamin_B12: string ,
-  taurine: string ,
-  caffeine: string ,
-  glucuronolactone: string ,
-  inositol: string 
-}
-
-interface DataProps {
-  details: DetailsData;
-  nutritional_info: NutritionalInfo;
-  ingredients: string
-}
-
-const Nav = (prop: { data: DataProps }) => {
-  const [select, setSelect] = useState("details");
-
-  const selectedLi = (id: string) => {
+  const selectedLi = (id: any) => {
     setSelect(id);
     
   };
@@ -42,12 +16,12 @@ const Nav = (prop: { data: DataProps }) => {
     <section className="mt-4">
       <header className="w-full">
         <nav className="w-full flex justify-center">
-          <ul className="max-w-[500px] w-full flex flex-row justify-between px-2" id={select}>
+          <ul className="max-w-[500px] w-full flex flex-row justify-between px-2">
             <li>
               <button
-                className="font-inter uppercase flex flex-col items-center"
+                className={"font-inter uppercase flex flex-col items-center " + select[0]}
                 onClick={() => {
-                  selectedLi("details");
+                  selectedLi(["active", "desactive", "desactive"]);
                   document.querySelector('#box')?.scroll({
                     left: 0
                   })
@@ -58,9 +32,9 @@ const Nav = (prop: { data: DataProps }) => {
             </li>
             <li>
               <button
-                className="font-inter uppercase flex flex-col items-center"
+                className={"font-inter uppercase flex flex-col items-center " + select[1]}
                 onClick={() => {
-                  selectedLi("nutritionals");
+                  selectedLi(["desactive", "active", "desactive"]);
                   document.querySelector('#box')?.scroll({
                     left: 1000
                   })
@@ -71,9 +45,9 @@ const Nav = (prop: { data: DataProps }) => {
             </li>
             <li>
               <button
-                className="font-inter uppercase flex flex-col items-center"
+                className={"font-inter uppercase flex flex-col items-center " + select[2]}
                 onClick={() => {
-                  selectedLi("ingredients");
+                  selectedLi(["desactive", "desactive", "active"]);
                   document.querySelector('#box')?.scroll({
                     left: 3000
                   })
@@ -87,13 +61,13 @@ const Nav = (prop: { data: DataProps }) => {
       </header>
       <section className="w-full flex flex-row justify-center mb-6 pt-6">
         <div id="box" className="md:max-w-[50%] flex flex-row overflow-x-hidden snap-mandatory scroll-smooth snap-x">
-          <Details details={prop.data.details} />
-          <Table nutritional={prop.data.nutritional_info} />
-          <Ingredients ingredients={prop.data.ingredients}/>
+          <Details />
+          <Table />
+          <Ingredients />
         </div>
       </section>
     </section>
   );
 };
 
-export default Nav;
+export default Infos;

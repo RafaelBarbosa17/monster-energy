@@ -1,9 +1,10 @@
 
+import useProduct from "@/context/useProduct";
 import { BsArrowRight } from "react-icons/bs";
-import { DetailsData } from "./Infos";
 
+const Details = () => {
+    const product = useProduct()
 
-const Details = (prop: {details: DetailsData}) => {
     return (
         <section id="details" className="w-full min-w-[350px] snap-center mx-[100%] relative">
             <div className="w-full flex flex-col items-center">
@@ -14,7 +15,7 @@ const Details = (prop: {details: DetailsData}) => {
                     <div className="flex flex-row p-8 gap-4 justify-center">
                     <div className="">
                         <h3 className="font-teko text-5xl text-center font-bold">
-                        {prop.details.caffeine}
+                        {product?.details.caffeine}
                         </h3>
                         <p className="uppercase text-center font-inter opacity-80">
                         mg de caféina por 200ml
@@ -23,7 +24,7 @@ const Details = (prop: {details: DetailsData}) => {
                     <div className="min-h-full min-w-[2px] bg-icewhite opacity-70"></div>
                     <div>
                         <h3 className="font-teko text-5xl text-center font-bold">
-                        {prop.details.sugars}
+                        {product?.details.sugars}
                         </h3>
                         <p className="uppercase text-center font-inter opacity-80">
                         gramas de açúcar
