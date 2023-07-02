@@ -6,7 +6,7 @@ const Header = () => {
         <header className="w-full h-[10vh] snap-center">
             <div className="w-40 h-auto p-4">
                 <Image
-                    src={'/logo-main.png'}
+                    src={'/logos/logo-original.png'}
                     alt="Logo principal"
                     className="w-full h-full"
                     width={300}
