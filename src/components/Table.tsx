@@ -8,14 +8,14 @@ const Table = () => {
   return (
     <section
       id="nutritional"
-      className="min-w-[90%] snap-center flex justify-center"
+      className="min-w-[90vw] snap-center flex justify-center"
     >
-      <div>
-        <h2 className="uppercase text-2xl font-bold">
+      <div className="">
+        <h2 className="uppercase text-2xl font-bold text-center">
           informações nutricionais
         </h2>
-        <table className="font-inter text-left align-top w-full">
-          <thead className="bg-gray text-left align-bottom">
+        <table className="font-inter text-left align-top w-full max-h-[60%] flex flex-col">
+          <thead className="bg-gray text-left align-bottom flex justify-between ">
             <tr>
               <th className="p-2" scope="col">
                 Ingredientes
@@ -25,7 +25,7 @@ const Table = () => {
               </th>
             </tr>
           </thead>
-          <tbody className="bg-black max-h-[200px] overflow-auto min-w-full">
+          <tbody className="bg-black overflow-auto min-w-full">
             <tr>
               <th className="p-2" scope="row">
                 Valor Energetico:

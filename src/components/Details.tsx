@@ -6,12 +6,12 @@ const Details = () => {
     const product = useProduct()
 
     return (
-        <section id="details" className="w-full min-w-[350px] snap-center mx-[100%] relative">
-            <div className="w-full flex flex-col items-center">
+        <section id="details" className="w-full min-w-[100vw] justify-center flex snap-center mx-[100%] relative">
+            <div className="md:w-2/4 w-full flex flex-col items-center">
                 <h2 className="text-md font-inter font-bold text-center m-6">
                     O QUE TEM NA LATA
                 </h2>
-                <div className="border w-fit">
+                <div className="border w-fit max-w-[90%]">
                     <div className="flex flex-row p-8 gap-4 justify-center">
                     <div className="">
                         <h3 className="font-teko text-5xl text-center font-bold">

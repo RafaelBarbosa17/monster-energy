@@ -14,11 +14,20 @@
     font-weight: bold;
 }
 
-#tbody tr {
-    display: block;
+thead tr, tbody tr {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 
-.el {
-    color: #002fff;
-    background-color: #0b3216;
+tbody tr td {
+    text-align: center;
+}
+
+tbody tr td, tbody tr th {
+    width: max-content;
+}
+
+#box section {
+    max-height: 80vh;
 }

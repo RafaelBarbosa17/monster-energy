@@ -1,3 +1,4 @@
+
 import './globals.css'
 import '../styles/navbuttons.css'
 import { Inter, Teko, Schoolbell } from 'next/font/google'
@@ -34,11 +35,13 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-br" className='bg-fixed bg-gradient-to-t from-gray to-black text-icewhite'>
       <head>
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
       </head>
-      <body className={`bg-fixed bg-gradient-to-t from-gray to-black text-icewhite ${inter.variable} ${teko.variable} ${schoolbell.variable} `}>{children}</body>
+      <body className={`${inter.variable} ${teko.variable} ${schoolbell.variable}`}>
+        {children}
+      </body>
     </html>
   )
 }
